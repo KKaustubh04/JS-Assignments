@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Workspace</title>
+
+    <script>
+      /*let anyNumber = prompt("Enter any number to check if it is prime or not");
+      if (anyNumber > 1) {
+        for (var i = 2; i < anyNumber; i++) {
+          if (anyNumber % i == 0) {
+            console.log("It isn't a prime number!!");
+            break;
+          } else {
+            console.log("It's a prime number!!");
+          }
+        }
+      }*/
+      let anyNumber = prompt("Enter any number to check if it is prime or not");
+      let i = 1, j = 0;
+      while (i <= anyNumber) {
+        if (anyNumber % i == 0) j++;
+        i++;
+      }
+      if (j == 2) {
+        console.log(anyNumber, "is Prime Number");
+      } else {
+        console.log(anyNumber, "is Not Prime Number");
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>JS Workspace</h2>
+  </body>
+</html>
